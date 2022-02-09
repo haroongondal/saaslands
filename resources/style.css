@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500;
+}
+.navbar {
+  transition: 0.3s linear;
+  height: 110px;
+}
+.navbar-scroll {
+  background-color: white;
+}
+.navbar:not(.navbar-scroll) {
+  background-color: transparent;
+}
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 0 !important;
+}
+.navbar.navbar-scroll .nav-link,
+.navbar.navbar-scroll .nav-link:hover,
+.navbar.navbar-scroll .nav-link:active {
+  color: black;
+}
+.payment-banner {
+  background-image: -moz-linear-gradient(
+    125deg,
+    #5f51fb 0%,
+    #767cfd 64%,
+    #8ca7ff 100%
+  );
+  background-image: -webkit-linear-gradient(
+    125deg,
+    #5f51fb 0%,
+    #767cfd 64%,
+    #8ca7ff 100%
+  );
+  background-image: -ms-linear-gradient(
+    125deg,
+    #5f51fb 0%,
+    #767cfd 64%,
+    #8ca7ff 100%
+  );
+  height: 100vh;
+  min-height: 860px;
+  padding-top: 200px;
+  position: relative;
+  z-index: 1;
+}
+.payment-banner .banner-link,
+.payment-banner .banner-link:hover {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.payment-banner .banner-link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.payment-banner .banner-heading {
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+}
+.payment-banner .banner-inner {
+  max-width: 800px;
+}
+.custom-button {
+  color: #5f51fb;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 41px;
+  -webkit-box-shadow: 0 30px 30px 0 rgba(0, 11, 40, 0.1);
+  box-shadow: 0 30px 30px 0 rgba(0, 11, 40, 0.1);
+  border-radius: 45px;
+  border: none;
+}
+.banner-img {
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+.banner_icon_one {
+  top: -82px;
+  left: -34px;
+  position: absolute;
+}
+.banner_icon_two {
+  left: 20px;
+  top: 33%;
+  position: absolute;
+}
+.banner_icon_three {
+  top: 38%;
+  left: -20px;
+  z-index: 1;
+  position: absolute;
+}
+
+.banner_icon_four {
+  right: 0;
+  top: -89px;
+  position: absolute;
+}
+
+.banner_icon_five {
+  right: -40px;
+  top: 80px;
+  position: absolute;
+}
+
+.banner_icon_six {
+  right: -20px;
+  top: 160px;
+  position: absolute;
+}
+.second_section {
+  padding-top: 120px;
+  background-color: #f4f5f7;
+}
+.second_section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+.second_section p {
+  color: #677294;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-bottom: 16px;
+  padding-top: 15px;
+}
+.second_cards {
+  padding: 40px 0 110px 0;
+}
+.second_card_body {
+  padding: 50px 40px 38px 40px;
+  box-shadow: 0px 20px 60px 0px rgba(0, 11, 40, 0.06);
+}
+.second_section_img {
+  height: 97px;
+  margin-bottom: 20px;
+}
+.second_card_title {
+  margin-bottom: 26px;
+  font-size: 20px;
+  font-weight: 600;
+}
+p.second_card_text {
+  color: #677294;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.second_cards .dollor-icon {
+  color: #afb8ce;
+  font-size: 40px;
+}
+.second_cards .dollor-icon:hover {
+  color: #677294;
+}
+.third_section {
+  padding: 110px 0 75px 0;
+  background-color: #fbfbfd;
+}
+.third_section h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 28px;
+}
+.third_section h5 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+.third_cards {
+  padding-top: 80px;
+}
+.third_card_title {
+  color: #051441;
+  font-size: 20px;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.third_card_text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #677294;
+  font-weight: 400;
+}
+/* .third_card_img{
+  height: 80px;
+} */
