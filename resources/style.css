@@ -168,8 +168,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -363,6 +363,7 @@ p.second_card_text {
   padding: 45px;
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
 }
 .users_sub_section .feedback_item .feed_back_author {
   display: -webkit-box;
@@ -470,12 +471,16 @@ p.second_card_text {
 }
 .sponsors_sub_section {
   padding: 140px 0 120px 0;
+  background-color: #f4f5f7;
 }
 .sponsors_sub_section h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.3em;
   margin-bottom: 38px;
+}
+.sponsors_sub_section .row {
+  padding: 70px 0 35px 0;
 }
 .sixth_section {
   padding: 120px 0 90px 0;
