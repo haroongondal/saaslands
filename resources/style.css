@@ -34,6 +34,106 @@ body {
 .navbar.navbar-scroll .nav-link:active {
   color: black;
 }
+.custom_navbar .menu_toggle {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+.menu_toggle .hamburger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(1) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(3) {
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.menu_toggle .hamburger-cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  color: pointer;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(1) {
+  height: 0%;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(2) {
+  width: 0%;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.menu_toggle .hamburger-cross span:nth-child(1) {
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.menu_toggle .hamburger-cross span:nth-child(2) {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.collapsed .menu_toggle .hamburger span {
+  width: 100%;
+}
+.custom_navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.menu_toggle .hamburger span,
+.menu_toggle .hamburger-cross span {
+  background: #ffffff;
+}
+.menu_toggle .hamburger-cross span {
+  display: block;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.menu_toggle .hamburger span {
+  width: 0%;
+  height: 2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 4px 0;
+  display: block;
+  border-radius: 3px;
+}
 .payment-banner {
   background-image: -moz-linear-gradient(
     125deg,
@@ -675,8 +775,24 @@ p.second_card_text {
   }
 }
 @media (max-width: 991px) {
+  .custom_navbar .nav-item:first-child > .nav-link {
+    margin-left: 45px !important;
+  }
+  .custom_navbar .navbar-collapse.show {
+    background-color: white;
+  }
+  .navbar-collapse.show .nav-link,
+  .navbar-collapse.show .nav-link:hover,
+  .navbar-collapse.show .nav-link:active {
+    color: black;
+  }
   .pricing_container {
     padding-bottom: 0;
+  }
+  .custom_navbar .navbar-brand,
+  .menu_toggle {
+    margin-bottom: 0;
+    transition: all 0.2s linear;
   }
   .price_cards {
     margin-bottom: 30px;
